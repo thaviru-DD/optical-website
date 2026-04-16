@@ -1,0 +1,23 @@
+/* Hero Section */
+
+.hero-section{
+    margin-top: 5%;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.heroImage{
+    width: 100vh;
+    border-radius: 20px;
+}
+
+.heroTopic{
+    font-size: 40px;
+}
+
+.text-hero{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

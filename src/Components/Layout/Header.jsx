@@ -17,7 +17,7 @@ function Header() {
                 <NavLinks nameLink = "About us" url="/about"/>
             </div>
             <div className="contact">
-                <Button/>
+                <Button name="Contact" style="contact-btn"/>
             </div>
         </nav>
       </div>

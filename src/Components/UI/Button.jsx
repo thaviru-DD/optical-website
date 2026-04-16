@@ -1,11 +1,11 @@
 import React from 'react'
 import './Button.css'
 
-function Button() {
+function Button(props) {
   return (
     <div>
       <>
-       <button>Contact</button>
+       <button>{props.name}</button>
       </>
     </div>
   )
