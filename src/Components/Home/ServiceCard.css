@@ -7,6 +7,10 @@
     padding: 20px;
 }
 
+.card-hedding p{
+    margin-top: 1rem;
+}
+
 .title{
     color: white;
 }
@@ -15,6 +19,7 @@
 .service-card{
     margin-top: 5rem;
     background-color: #0B2D72;
+    padding: 0 0 3rem 0;
 }
 
 .all-cards{
@@ -26,6 +31,10 @@
 .cards{
     background-color: #fff;
     width: 16rem;
-    height: 260px;
+    height: 250px;
     border-radius: 20px;
+}
+
+p{
+    text-align: center;
 }
