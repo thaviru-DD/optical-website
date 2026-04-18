@@ -6,6 +6,7 @@ import Button from '../Components/UI/Button'
 import Card from '../Components/UI/Card'
 import Hero from '../Components/Home/Hero'
 import ServiceCard from '../Components/Home/ServiceCard'
+import ContactInfo from '../Components/Contact/ContactInfo'
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
             
         <Hero/>
         <ServiceCard/>
+        <ContactInfo/>
         
     </div>
   )
