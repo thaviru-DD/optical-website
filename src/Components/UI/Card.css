@@ -61,3 +61,10 @@
     font-size: 15px;
     line-height: 1.5;
   }
+
+  @media (max-width: 475px){
+    .card-grid{
+        display: flex;
+        flex-direction: column;
+    }
+  }

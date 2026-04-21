@@ -1,16 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavLinks from '../UI/NavLinks'
 import './Header.css'
 import Button from '../UI/Button'
+import { Menu, X } from 'lucide-react'
+import { useState } from 'react'
 
 function Header() {
+
+  const [open, setOpen] = useState(false);
+
+
+
+
   return (
-    <div>
-      <>
+
       <div className="container">
-        <nav>
-            <h1>R.A. Jayasinghe Opticians</h1>
-            <div className="navLinks">
+
+        <nav className={open? "active-nav" : "nav"}>
+            <h1 className={open? "heddingText-active" : ""}>R.A. Jayasinghe Opticians</h1>
+            {open? <X className='close-icon' onClick={() => setOpen(!open)}/> :  <Menu className="ham-burger-icon" onClick={() => setOpen(!open)}/>}
+            
+            
+            
+            <div className={open? "active-navLinks" :"navLinks"}>
                 <NavLinks nameLink = "Home" url="/"/>
                 <NavLinks nameLink = "Stocks" url="/stock"/>
                 <NavLinks nameLink = "Location" url="/location"/>
@@ -20,10 +32,25 @@ function Header() {
                 <Button name="Contact" style="contact-btn"/>
             </div>
         </nav>
-      </div>
-      </>
 
-    </div>
+        {/* <div className={open? "active-links-mobile" : "links-mobile"}>
+          <h1>R.A. Jayasinghe Opticians</h1>
+            <div>
+                <NavLinks nameLink = "Home" url="/"/>
+                  <NavLinks nameLink = "Stocks" url="/stock"/>
+                  <NavLinks  nameLink = "Location" url="/location"/>
+                  <NavLinks  nameLink = "About us" url="/about"/>
+            </div>
+            <button>Contact</button>
+        </div> */}
+
+
+
+
+      </div>
+
+
+
   )
 }
 

@@ -2,7 +2,7 @@ h1{
     color: var(--color-primary);
 }
 
-nav{
+.nav{
     display: flex;
     justify-content: space-between;
     background-color: var(--color-secondary);
@@ -14,4 +14,54 @@ nav{
 .navLinks{
     display: flex;
     gap: 50px;
+}
+
+.ham-burger-icon{
+    display: none;
+}
+
+.heddingText-active{
+    color: white;
+    font-size: 20px;
+    display: inline;
+}
+
+.active-nav{
+    background-color: var(--color-primary);
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.active-navLinks, a{
+    color: white;
+}
+
+.navLinks a{
+    color: var(--color-primary);
+}
+.hide-colose{
+    display: none;
+}
+
+.close-icon{
+    color: white;
+}
+
+.hide-menu{
+    display: none;
+}
+
+@media (max-width: 475px){
+    .navLinks, .contact{
+        display: none;
+    }
+
+    .ham-burger-icon{
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+
+        
+    }
 }

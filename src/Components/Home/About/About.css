@@ -1,0 +1,22 @@
+.about-section{
+    background-color: #0B2D72;
+    color: #fff;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.about-section h1{
+    color: #0B2D72;
+    text-align: center;
+}
+
+.about-section p{
+
+    margin-top: 3%;
+    
+
+}
+
+.about-img{
+    width: 100vh;
+}

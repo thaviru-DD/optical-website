@@ -7,6 +7,8 @@ import Card from '../Components/UI/Card'
 import Hero from '../Components/Home/Hero'
 import ServiceCard from '../Components/Home/ServiceCard'
 import ContactInfo from '../Components/Contact/ContactInfo'
+import Lencess from '../Components/Home/Lencess/Lencess'
+import About from '../Components/Home/About/About'
 
 function Home() {
   return (
@@ -16,8 +18,9 @@ function Home() {
         <Hero/>
         <ServiceCard/>
         <ContactInfo/>
-        
-    </div>
+        <Lencess/>
+
+      </div>
   )
 }
 
