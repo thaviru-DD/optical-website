@@ -20,13 +20,13 @@ function Lencess() {
     },
 
     {
-      title: "Lence 1",
+      title: "Lence 2",
       image: "",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."
     },
 
     {
-      title: "Lence 1",
+      title: "Lence 3",
       image: "",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."
     },
@@ -45,6 +45,16 @@ function Lencess() {
     <motion.section className="lencess-section">
       
       <motion.h1 initial="hidden" whileInView="visible" variants={lenceSectionVariant}>Lencess</motion.h1>
+      <p className="phara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, libero consequatur? Velit sapiente iste ab aliquam assumenda facere nulla, animi quo perferendis sed voluptate id, non culpa sequi rem repellat! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, reiciendis!</p>
+
+      <div className="cards-lences">
+        {lenceCards.map((card, index) => (
+          <motion.div key={index} className="card" initial={{opacity: 0, y:50}} whileInView={{opacity:1, y:0, delay: 5}} whileHover={{y: -5, scale: 1.1}} transition={{duration: 0.1}}> 
+            <h2>{card.title}</h2>
+            <p>{card.desc}</p>
+          </motion.div>
+        ))}
+      </div>
       
     </motion.section>
 
