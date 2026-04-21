@@ -9,6 +9,7 @@ import ServiceCard from '../Components/Home/ServiceCard'
 import ContactInfo from '../Components/Contact/ContactInfo'
 import Lencess from '../Components/Home/Lencess/Lencess'
 import About from '../Components/Home/About/About'
+import Frames from '../Components/Home/Frames/Frames'
 
 function Home() {
   return (
@@ -17,8 +18,10 @@ function Home() {
             
         <Hero/>
         <ServiceCard/>
-        <ContactInfo/>
+        <Frames/>
         <Lencess/>
+        <ContactInfo/>
+
 
       </div>
   )

@@ -1,0 +1,20 @@
+img{
+    width: 300px;
+}
+
+.card2{
+    background-color: #E7E7E7;
+    height: 400px;
+}
+
+.card2:hover{
+    cursor: pointer;
+}
+
+.card2 h1{
+    padding: 10px 5px;
+}
+
+.card2 p{
+    padding: 0px 5px;
+}

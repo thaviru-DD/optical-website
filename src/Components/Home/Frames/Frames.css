@@ -1,0 +1,22 @@
+.heading-text{
+    text-align: center;
+    font-size: 40px;
+}
+
+.frames-container{
+    margin-top: 5%;
+}
+
+.cards-all{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.under-line{
+    width: 15rem;
+    height: 0.6rem;
+    border-radius: 1rem;
+    background-color: #0B2D72;
+    margin: 0 auto;
+}
