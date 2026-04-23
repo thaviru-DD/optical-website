@@ -4,6 +4,7 @@ import About from './Pages/About'
 import Stock from './Pages/Stock'
 import Location from './Pages/Location'
 import Header from './Components/Layout/Header'
+import Footer from "./Components/Layout/Footer";
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
 
       
     </>
