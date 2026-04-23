@@ -1,11 +1,8 @@
 import React from 'react'
 import "./Footer.css"
 import { motion } from 'framer-motion'
-import { FaWhatsappSquare } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaWhatsappSquare, FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
-import { FaTwitterSquare } from "react-icons/fa";
 
 
 function Footer() {
@@ -29,11 +26,11 @@ function Footer() {
       </div>
 
       <div className="section-two">
-        <motion.FaWhatsappSquare fill='white'/>
-        <FaFacebookSquare fill='white'/>
-        <FaInstagramSquare fill='white'/>
-        <AiFillTikTok fill='white'/>
-        <FaTwitterSquare fill='white'/>
+        <FaWhatsappSquare  fill='white' className='icon'/>
+        <FaFacebookSquare fill='white' className='icon'/>
+        <FaInstagramSquare fill='white' className='icon'/>
+        <AiFillTikTok fill='white' className='icon'/>
+        <FaTwitterSquare fill='white' className='icon'/>
       </div>
 
       <div className="section-three">
