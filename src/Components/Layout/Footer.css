@@ -1,6 +1,6 @@
 .footer-content{
     background-color: #0B2D72;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .section-one{
@@ -26,11 +26,11 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .section-three{
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 .copyright{
@@ -45,5 +45,4 @@
 .icon:hover{
     cursor: pointer;
     transform: scale(1.2);
-    
 }

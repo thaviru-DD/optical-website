@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Footer.css"
-import { motion } from 'framer-motion'
 import { FaWhatsappSquare, FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 

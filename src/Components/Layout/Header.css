@@ -52,6 +52,14 @@ h1{
     display: none;
 }
 
+.box{
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    background-color: blue;
+    display: none;
+}
+
 @media (max-width: 475px){
     .navLinks, .contact{
         display: none;

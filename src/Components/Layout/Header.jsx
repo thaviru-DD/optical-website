@@ -9,6 +9,10 @@ function Header() {
 
   const [open, setOpen] = useState(false);
 
+  // document.querySelector('.stocks-link').addEventListener('mouseover', () => {
+  //   document.querySelector('.box').style.display = 'block';
+  // })
+
 
 
 
@@ -24,7 +28,11 @@ function Header() {
             
             <div className={open? "active-navLinks" :"navLinks"}>
                 <NavLinks nameLink = "Home" url="/"/>
-                <NavLinks nameLink = "Stocks" url="/stock"/>
+                <div>
+                  <NavLinks className="stocks-link" nameLink = "Stocks" url="/stock"/>
+                  <div className='box'></div>
+                </div>
+                
                 <NavLinks nameLink = "Location" url="/location"/>
                 <NavLinks nameLink = "About us" url="/about"/>
             </div>
