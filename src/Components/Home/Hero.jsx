@@ -22,7 +22,7 @@ function Hero() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis fuga ex facere, quos quaerat tenetur repudiandae sint, natus, aliquam error voluptatum incidunt? Sunt alias quos, reiciendis velit molestiae fugit? Ea, alias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam.</p>
                 <Button name="Contact-us" style="hello-btn"/>
 
-                <motion.video initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 2}} width="400" autoPlay loop muted>
+                <motion.video className='hero-video' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 2}} width="400" autoPlay loop muted>
                   <source src={girlVideo} type='video/mp4'/>
                 </motion.video>
 
