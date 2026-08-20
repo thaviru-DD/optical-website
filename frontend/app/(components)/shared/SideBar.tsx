@@ -1,37 +1,21 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { ChevronLeft, ClipboardClock, Cog, LayoutDashboard, LogOut, MessageCircleMore, ShoppingCart } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 
+type SideBarProps = {
+    isOpen: boolean
+    onClose: () => void
+    onExitComplete: () => void
+}
 
-
-function SideBar() {
-
-    const[isOpen, setIsOpen] = useState(false)
-    const [showMenuButton, setShowMenuButton] = useState(true)
-
-    const openSidebar = () => {
-        setShowMenuButton(false)
-        setIsOpen(true)
-    }
-
-    const closeSidebar = () => {
-        setIsOpen(false)
-    }
-
+function SideBar({ isOpen, onClose, onExitComplete }: SideBarProps) {
     
   return (
-    <div>
-        {/* Mobile menue icon */}
-        {showMenuButton && (
-            <button onClick={openSidebar} className="md:hidden text-2xl">
-                ☰
-            </button>
-        )}
-    
+    <div className="fixed inset-y-0 left-0 z-50">
         {/* Mobile sidebar content */}
-        <AnimatePresence onExitComplete={() => setShowMenuButton(true)}>
+        <AnimatePresence onExitComplete={onExitComplete}>
             {isOpen && (
                 <motion.div initial={{ x: "-100%" }}
             animate={{ x: 0 }}
@@ -39,8 +23,9 @@ function SideBar() {
             transition={{ duration: 0.3, ease: "easeInOut" }} className="md:hidden flex flex-col gap-20 bg-brand-navy text-white p-4 w-64 h-screen rounded-tr-4xl relative">
 
             {/* Close button */}
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ delay: 0.15 }} onClick={closeSidebar}
-                className="absolute top-4 right-[-20px] bg-brand-navyLight w-10 h-10 rounded-full shadow-md flex items-center justify-center cursor-pointer">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ delay: 0.15 }} onClick={onClose}
+                className="absolute top-4 -right-5 bg-brand-navyLight w-10 h-10 rounded-full shadow-md flex items-center justify-center cursor-pointer"
+            >
                 <ChevronLeft />
             </motion.div>
                     <div>
