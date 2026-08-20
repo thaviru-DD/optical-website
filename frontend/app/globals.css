@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-navy: #102C57; /* header, headings */
+    --color-brand-navyLight: #1C3D73; /* buttons and links hover */
+    --color-brand-tan: #DAC0A3; /* CTA buttons, accents, hairlines */
+    --color-brand-tanHover: #C7A984; /* hover state for tan buttons */
+    --color-brand-sand: #EADBC8; /* card backgrounds, secondary sections */
+    --color-brand-background: #FEFAF6; /* page background color */
+
+
+}
